@@ -32,6 +32,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 import org.eclipse.wb.swing.FocusTraversalOnArray;
+import java.awt.Toolkit;
 
 @SuppressWarnings("unused")
 public class MainWindow {
@@ -195,6 +196,7 @@ public class MainWindow {
 		wndow = this;
 		
 		frmNotePlayerPiano = new JFrame();
+		frmNotePlayerPiano.setIconImage(Toolkit.getDefaultToolkit().getImage(MainWindow.class.getResource("/ui/32.png")));
 		frmNotePlayerPiano.addComponentListener(new ComponentAdapter() {
 			@Override
 			public void componentResized(ComponentEvent arg0) {
